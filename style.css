@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: inter, sans-serif;
+  transition: all 0.3s ease 0s;
+}
+.grid{
+  display: flex;
+  position: relative;
+}
+#topnav{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  padding: 20px 7% 20px 5%;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+#topnav ul{
+  text-decoration: none;
+  list-style-type: none;
+}
+#topnav li{
+  padding-left: 40px;
+  display: inline-block;
+}
+#topnav a{
+  font-size:30px;
+  color: white;
+  text-decoration: none;
+}
+#topnav a:hover, .title h1:hover{
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+#navbar{
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  padding: 150px 1% 20px 50px;
+  font-size: 25px;
+  background-color: #160606;
+  color: white;
+  display: inline-block;
+}
+#navbar ul{
+  text-decoration: none;
+  list-style-type: none;
+  padding-bottom: 50px;
+}
+#navbar li{
+  padding-top: 15px;
+  padding-bottom: 7px;
+  padding-left: 25px;
+}
+#navbar a{
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+#navbar a:hover, h1:hover{
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+.info{
+  margin-top: 150px;
+  margin-left: 350px;
+  margin-right: 100px;
+}
+section{
+  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 0;
+  
+}
+.big{
+  font-size: 35px;
+  padding: 20px;
+}
+section h1{
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  width:70%;
+  overflow: auto;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 5px;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 560px){
+  #topnav{
+    display: block;
+  }
+  #topnav ul{
+    display: none;
+  }
+  #topnav h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #navbar{
+    width: 100%;
+  }
+  #navbar{
+    position: absolute;
+    height:1000px;
+    padding-left: 15%;
+  }
+  .info{
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 1100px;
+  }
+  code{
+    width: 400px;
+  }
+
+}

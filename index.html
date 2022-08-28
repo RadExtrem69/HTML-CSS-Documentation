@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 CSS3 Documentation</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <header>
+    <nav id="topnav">
+      <div class="title">
+        <h1>ニヤツ</h1>
+      </div>
+      <ul>
+        <li class="html"><h1><a href="#htmllol">HTML5</a></h1></li>
+        <li class="css"><h1><a href="#csslol">CSS3</a></h1></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-doc">
+    <div class="grid">
+      <nav id="navbar">
+        <div class="header">
+          <h1>HTML5</h1>
+        </div>
+        <ul>
+          <li><a href="#htmllol">Basics</a></li>  
+          <li><a href="#Text">Text</a></li>  
+          <li><a href="#Media">Media</a></li>  
+          <li><a href="#Hyperlink">Hyperlink</a></li>  
+          <li><a href="#List">List</a></li>  
+          <li><a href="#Table">Table</a></li>  
+        </ul>
+        <div class="header">
+          <h1>CSS3</h1>
+        </div>
+        <ul>
+          <li><a href="#csslol">Styling</a></li>  
+          <li><a href="#Linking">Linking</a></li>  
+          <li><a href="#Selectors">Selectors</a></li>  
+          <li><a href="#Properties">Properties</a></li>  
+          <li><a href="#Transform">Transform</a></li>  
+        </ul>
+      </nav>
+      <div class="info">
+        <h1 class="big" id="htmllol">HTML5</h1>
+        <section class="main-section" id="Basics">
+          <header>
+            <h1>Basics</h1>
+          </header>
+          <p>To get started with your first website, you need an IDE and a browser to check your website. If you can’t get an IDE, notepad works too. Just make sure you’re fine with what you have. Now, start up your IDE, create a folder for your project. Then add a .html file, we will use that to make our website. Now type in, “&lt!DOCTYPE html&gt” in your first line, and start with a &lthtml&gt tag on the next line. Don’t forget to close it (use &lt;/html&gt;). Some IDEs auto close your tags, but you can always do it by yourself on practice. There are some self-closing tags like &ltimg /&gt which do not require a closing tag. It is also necessary and a good practice that you include the title of the page, in the head element, and place all the other elements to be displayed in the body element.</p>
+          <br>
+          <pre>
+            <code>
+&lt!DOCTYPE html&gt;
+&lthtml&gt;
+  &lthead&gt;
+    &lttitle&gtTitle Here&lt/title&gt
+  &lt/head&gt;
+  &ltbody&gt;
+  &lt/body&gt;
+&lt/html&gt;
+            </code>
+          </pre>
+          
+        </section>
+        <section class="main-section" id="Text">
+          <header>
+            <h1>Text</h1>
+          </header>
+          <p>Text is definitely one of the most useful elements of html. You can choose between h1-h6 element types, which usually mean the size of each element. Also, you can manually change the font size anytime, using CSS techniques and styling. We'll learn that later. There is also the p element, which refers to a paragraph element in html. We will see their workings and see a demo on how to print hello world using h1 element.</p>
+          <br>
+          <pre>
+            <code>
+&lth1&gtHello World&lt/h1&gt
+&ltp&gtThis is my first website&lt/p&gt
+            </code>
+          </pre>
+          
+        </section>
+        <section class="main-section" id="Media">
+          <header>
+            <h1>Media</h1>
+          </header>
+          <p>So, we have launched our first website. Now, what if i told you can make your own Spotify? That's right. You can include Images, Videos and Music (Audio Files) in html. How do you do it? You use elements specific for img, video, audio. Refer to the example. As you may infer, img is self-closing, so don't worry about closing it manually. All the 3 elements have src in common, which refers to "source" of the file.</p>
+          <br>
+          <pre>
+            <code>
+&ltimg src="niyas.jpg"&gt
+&ltaudio src="dad.mp3"&gt&lt/audio&gt
+&ltvideo src="rad.mp4"&gt&lt/video&gt
+            </code>
+          </pre>
+        </section>
+        <section class="main-section" id="Hyperlink">
+          <header>
+            <h1>Hyperlink</h1>
+          </header>
+          <p>Now that we've made our own spotify, let's make our own link to another website. Doesn't make sense, right? It will in a few. So, did you know that you can inlcude hyperlinks in html? It is one of the fundamental topics in html. You can do it by using the a element. Yes, you heard it right. The "a" element. It refers to links. And you can give "href" attributes to the links for redirecting purposes. You can also make the browser open it in a new tab or open it as in the same page. That's by providing the "target" attribute.</p>
+          <br>
+          <pre>
+            <code>
+&lth1&gt&lta href="https://pewdiepie.com"&gtGo to pewdiepie&lt/a&gt&lt/h1&gt
+&lth1&gt&lta href="#"&gtGo to home&lt/a&gt&lt/h1&gt
+&lth1&gt&lta href="https://spotify.com"&gtGo to spotify&lt/a&gt&lt/h1&gt
+            </code>
+          </pre>
+        </section>
+        <section class="main-section" id="List">
+          <header>
+            <h1>Lists</h1>
+          </header>
+          <p>Lists are very important when it comes to navigation in html. You can use lists such as, Unordered lists, Ordered lists. These lists define how your list elements are numbered. Ordered lists usually number the lists by order, in 1,2,3,....etc. But Unordered lists make sure that the elements are bullet points. Here's a code snippet to use.</p>
+          <br>
+          <pre>
+            <code>
+&ltol&gt
+    &ltli&gtCoffee&lt/li&gt
+    &ltli&gtTea&lt/li&gt
+    &ltli&gtMilk&lt/li&gt
+&lt/ol&gt
+            </code>
+          </pre>
+        </section>
+        <section class="main-section" id="Table">
+          <header>
+            <h1>Tables</h1>
+          </header>
+          <p>Tables in html are mostly used when things are plotted, billed, or analyzed. Especially when you are tallying values and designing a layout to spread the data around for several ordered years, tables are used. Here's a quick example of how it works. Btw, I'm planning on making a time-table project for my class in the university.</p>
+          <br>
+          <pre>
+            <code>
+&lttable&gt
+  &lttr&gt
+    &ltth&gtBig name&lt/th&gt
+    &ltth&gtDay of the man&lt/th&gt
+    &ltth&gtMonth of the man&lt/th&gt
+  &lt/tr&gt
+  &lttr&gt
+    &ltth&gtNiyas&lt/th&gt
+    &ltth&gt10&lt/th&gt
+    &ltth&gtJuly&lt/th&gt
+  &lt/tr&gt
+&lt/table&gt
+            </code>
+          </pre>
+        </section>
+        <h1 class="big" id="csslol">CSS3</h1>
+        <section class="main-section" id="Styling">
+          <header>
+            <h1>Styling</h1>
+          </header>
+          <p>Styling is basically making or adjusting our design in the website to greater bounds and improvements. But how do we do it? That's where CSS3 comes in. You can make internal, external and inline styles. Inline styles are generally used to mark the current element, for example, you declare an element and say it's properties with it. External is the most popular way of making CSS styling.</p>
+          <br>
+          <pre>
+            <code>
+&lth1 style="color:white;padding:30px;"&gtWelcome mat.&lt/h1&gt
+&ltstyle&gt
+  .xleftcol {
+    float: left;
+    width: 33%;
+    background:#809900;
+  }
+&lt/style&gt
+            </code>
+          </pre>
+          
+        </section>
+        <section class="main-section" id="Linking">
+          <header>
+            <h1>Linking</h1>
+          </header>
+          <p>When you are making way for external CSS file, you have to link it to the current html file so that the web browser can combine them together to give out standard website layout. This is a very important step. The syntax for the following linkage is given below.</p>
+          <br>
+          <pre>
+            <code>
+&ltlink rel="stylesheet" href="style.css" /&gt
+            </code>
+          </pre>
+          
+        </section>
+        <section class="main-section" id="Selectors">
+          <header>
+            <h1>Selectors</h1>
+          </header>
+          <p>Now that we have learnt how to link your css files, let's look at how you can use Selectors in CSS to bring out and manage properties of your elements in html. This can be done by using a set of parameters, . or # or [] or [attribute = value]</p>
+          <br>
+          <pre>
+            <code>
+#thisisid {
+  property;
+}
+.thisisclass {
+  property;
+}
+.thisisclass, .anotherclass {
+  property;
+}
+            </code>
+          </pre>
+        </section>
+        <section class="main-section" id="Properties">
+          <header>
+            <h1>Properties</h1>
+          </header>
+          <p>Every property ever that you can include for HTML can be entered in CSS as well. You can select the correct properties, for example color, border, padding, alignment, margin, etc. for enabling proper website design. You can also unset some of the properties, and the most important thing to consider in CSS is the inheritance of the properties. Please refer to actual documentation if you want to know more.</p>
+          <br>
+          <pre>
+            <code>
+#thisisid {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  width:70%;
+  overflow: auto;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 5px;
+}
+            </code>
+          </pre>
+        </section>
+        <section class="main-section" id="Transform">
+          <header>
+            <h1>Transform</h1>
+          </header>
+          <p>Transformations/Transitions enable smooth transitions of HTML elements. It is used primarily to mark down the fluid mechanism of the website. For example, this website is heavily transitioned to make it feel smoother. Further smoothness and development can be enabled through application of JavaScript, but that's a topic for another day.</p>
+          <br>
+          <pre>
+            <code>
+transition: all 0.3s ease 0s;
+            </code>
+          </pre>
+        </section>
+      </div>
+    </div>
+    
+    
+  </main>
+<!-- partial -->
+  
+</body>
+</html>
